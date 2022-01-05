@@ -1,0 +1,6 @@
+# Python bytocode cache
+__pycache__/
+*.py[cod]
+
+# Data file
+sub.dat
