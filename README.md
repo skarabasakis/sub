@@ -4,7 +4,7 @@ A command line subscription manager that helps you track your subscription-relat
 
 ## Features
 
-- track your active subscriptions
+### Track your active subscriptions
 
 ```shell
 $ sub to netflix.com for 12.99/m
@@ -19,7 +19,7 @@ $ sub list
 ● netflix.com                  12.99 / month      2024-12-13 -
 ```
 
-- cancel subscriptions
+### Deactivate subscriptions
 
 ```shell
 $ sub cancel hulu.com
@@ -30,7 +30,7 @@ $ sub list
 ● netflix.com                  12.99 / month      2024-12-13 -
 ```
 
-- monitor how much you are spending
+### Track your payments and spending
 
 ```shell
 $ sub total
@@ -47,7 +47,7 @@ $ sub payments since 1 Jan 2024
 2024-11-13     45.00 hellomobile.com
 ```
 
-- plan your subscription budget
+### Plan your subscription budget
 
 ```shell
 $ sub payments since today until March 2025
