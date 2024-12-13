@@ -2,5 +2,8 @@
 __pycache__/
 *.py[cod]
 
+# Virtual environment
+venv/
+
 # Data file
 sub.dat
