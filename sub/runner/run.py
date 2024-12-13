@@ -1,21 +1,22 @@
+import os
 import pickle
 from .domain import SubscriptionList
 
-DEFAULT_PATH = 'sub.dat'
+DATA_PATH = os.environ.get('DATA_FILE', 'sub.dat')
 
 def run(command, name = None, options = {}):
     subscription_list = load() or SubscriptionList()
     run_command(command, name, options, subscription_list)
     save(subscription_list)
 
-def load(path = DEFAULT_PATH):
+def load(path = DATA_PATH):
     try:
         with open(path, 'rb') as file:
             return pickle.load(file)
     except FileNotFoundError:
         return None
 
-def save(subscription_list, path = DEFAULT_PATH):
+def save(subscription_list, path = DATA_PATH):
     with open(path, 'wb') as file:
         pickle.dump(subscription_list, file)
 
